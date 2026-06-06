@@ -15,7 +15,7 @@ The data in this repository is architected to map real-world human telemetry dir
   <h3>The Ingestion Gate (For Data Givers)</h3>
   <p>To contribute to the data matrix, upload your raw Empatica EmbracePlus telemetry.</p>
   
-  <a href="https://drive.proton.me/u/0/lGZXgYZ8SJBfOe_0jMNgzw/folder/GftZ3J9zSWHPgqgUvS5O0w”
+  <a href=”https://drive.proton.me/u/0/lGZXgYZ8SJBfOe_0jMNgzw/folder/GftZ3J9zSWHPgqgUvS5O0w”
      target="_blank"
      style="font-weight: bold; font-size: 1.3em; color: #00ffcc; text-decoration: underline;">
      👉 CLICK HERE TO OPEN THE SECURE UPLOAD INTERFACE
