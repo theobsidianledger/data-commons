@@ -9,15 +9,28 @@ The data in this repository is organized to map real-world human telemetry direc
 * `/laws-of-thermodynamics`: Focuses on mapping energy conservation (First Law) and metabolic heat/entropy dissipation (Second Law) during acute physiological stress.
 * `/evolutionary-adaptation`: Focuses on tracking long-term biological phenotypic plasticity and allostatic load balancing over an extended tracking timeline.
 
-## The Ingestion Gate (For Data Givers)
-To contribute to the data matrix, upload your raw Empatica EmbracePlus telemetry files here. 
-
-[👉 CLICK HERE TO DRAG & DROP YOUR RAW SENSOR .CSV FILES](https://drive.proton.me/urls/N2ZWNNXNWW#6LpheqxN97XM)
-
-*Note: Our system operates under a strict, non-semantic data policy. Only raw integers and numerical timestamps are accepted. All hardware metadata headers are stripped upon processing to maintain absolute participant anonymity.*
+<!-- SYSTEM INGESTION GATE PARAMETERS -->
+<div align="center">
+  <hr>
+  <h3>The Ingestion Gate (For Data Givers)</h3>
+  <p>To contribute to the data matrix, upload your raw Empatica EmbracePlus telemetry.</p>
+  
+  <a href="https://drive.proton.me/urls/N2ZWNNXNWW#6LpheqxN97XM”
+     type="application/octet-stream" 
+     accept=".avro"
+     style="font-weight: bold; font-size: 1.2em; color: #00ffcc; text-decoration: none;">
+     👉 CLICK HERE TO DRAG & DROP YOUR RAW SENSOR .AVRO FILE
+  </a>
+  
+  <br><br>
+  <small style="color: #ff3333; font-weight: bold; font-size: 0.9em;">
+    CRITICAL PROTOCOL: System parameters strictly locked to (.avro) format. Fragmented (.csv) files or manual spreadsheets will be automatically rejected by the ledger administrator to eliminate data translation errors.
+  </small>
+  <hr>
+</div>
 
 ## The Public Matrix (For Researchers)
-To download the complete, anonymous time-series database for computational modeling or analysis, clone this repository or utilize the open GitHub API links.
+To download the complete, anonymous time-series database for computational modeling or analysis, clone this repository or utilize the open GitHub API links. The binary `.avro` serialization format ensures native, un-smoothed compatibility with Python (Pandas/FastAvro), R, and MATLAB pipeline integrations.
 
 ***
 
