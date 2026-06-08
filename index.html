@@ -1,45 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Obsidian Ledger Pipeline</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>body { background-color: #09090b; color: #f4f4f5; font-family: monospace; }</style>
-</head>
-<body class="p-6 md:p-12 max-w-4xl mx-auto">
-    <div class="flex justify-end mb-4">
-        <select id="langSelect" class="bg-zinc-900 border border-zinc-700 text-zinc-300 text-xs p-1 rounded font-mono">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="zh">中文</option>
-            <option value="sw">Kiswahili</option>
-        </select>
-    </div>
-    <header class="border-b border-zinc-8xl pb-6 mb-8">
-        <h1 id="mainTitle" class="text-xl md:text-2xl font-bold tracking-wider text-zinc-100">🌐 THE OBSIDIAN LEDGER FOUNDATION</h1>
-        <p class="text-xs text-zinc-500 mt-1">PIPELINE ROUTING SYSTEM // VERSION 1.0.0 // GLOBAL ACTIVE</p>
-    </header>
-    <main class="space-y-6">
-        <div id="dropzone" class="border-2 border-dashed border-zinc-700 bg-zinc-900 p-12 text-center rounded min-h-[250px] flex flex-col items-center justify-center">
-            <span class="text-3xl mb-3">📥</span>
-            <p id="dropzoneText" class="text-sm font-medium text-zinc-200">Drag and drop raw biophysical payload here</p>
-            <input type="file" id="fileInput" class="hidden" accept=".avro" />
-        </div>
-    </main>
-    <script>
-        const translations = {
-            en: { mainTitle: "🌐 THE OBSIDIAN LEDGER FOUNDATION", dropzoneText: "Drag and drop raw biophysical payload here" },
-            es: { mainTitle: "🌐 FUNDACIÓN THE OBSIDIAN LEDGER", dropzoneText: "Arrastre y suelte la carga útil sin procesar aquí" },
-            zh: { mainTitle: "🌐 黑曜石账本基金会", dropzoneText: "请将原始生物物理数据文件拖放到此处" },
-            sw: { mainTitle: "🌐 THE OBSIDIAN LEDGER FOUNDATION", dropzoneText: "Buruta na udondoshe mzigo mbichi wa data hapa" }
-        };
-        const langSelect = document.getElementById('langSelect');
-        langSelect.addEventListener('change', (e) => {
-            const set = translations[e.target.value];
-            document.getElementById('mainTitle').innerText = set.mainTitle;
-            document.getElementById('dropzoneText').innerText = set.dropzoneText;
-        });
-    </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>The Obsidian Ledger Pipeline</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><style>body { background-color: #09090b; color: #f4f4f5; font-family: monospace; }</style></head><body class="p-6 md:p-12 max-w-4xl mx-auto">
+<div class="flex justify-end mb-4"><select id="langSelect" class="bg-zinc-900 border border-zinc-700 text-zinc-300 text-xs p-1 rounded font-mono"><option value="en">English</option><option value="es">Español</option><option value="zh">中文</option><option value="sw">Kiswahili</option></select></div><header class="border-b border-zinc-8xl pb-6 mb-8"><h1 id="mainTitle" class="text-xl md:text-2xl font-bold tracking-wider text-zinc-100">🌐 THE OBSIDIAN LEDGER FOUNDATION</h1><p class="text-xs text-zinc-500 mt-1">PIPELINE ROUTING SYSTEM // VERSION 1.0.0 // GLOBAL ACTIVE</p></header>
+<main class="space-y-6"><div id="dropzone" class="border-2 border-dashed border-zinc-700 bg-zinc-900 p-12 text-center rounded min-h-[250px] flex flex-col items-center justify-center"><span class="text-3xl mb-3">📥</span><p id="dropzoneText" class="text-sm font-medium text-zinc-200">Drag and drop raw biophysical payload here</p><input type="file" id="fileInput" class="hidden" accept=".avro" /></div></main>
+<script>const translations = { en: { mainTitle: "🌐 THE OBSIDIAN LEDGER FOUNDATION", dropzoneText: "Drag and drop raw biophysical payload here" }, es: { mainTitle: "🌐 FUNDACIÓN THE OBSIDIAN LEDGER", dropzoneText: "Arrastre y suelte la carga útil sin procesar aquí" }, zh: { mainTitle: "🌐 黑曜石账本基金会", dropzoneText: "请将原始生物物理数据文件拖放到此处" }, sw: { mainTitle: "🌐 THE OBSIDIAN LEDGER FOUNDATION", dropzoneText: "Buruta na udondoshe mzigo mbichi wa data hapa" } }; const langSelect = document.getElementById("langSelect"); langSelect.addEventListener("change", (e) => { const set = translations[e.target.value]; document.getElementById("mainTitle").innerText = set.mainTitle; document.getElementById("dropzoneText").innerText = set.dropzoneText; });</script></body></html>
